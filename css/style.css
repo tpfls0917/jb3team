@@ -302,6 +302,8 @@ body {
 #check_box > .check_box1 > .check_box_txt > p {
   font-size: 24px;
   font-weight: 300;
+  padding-left: 15px;
+  padding-top: 20px;  
 }
 #check_box > .check_box1 > .check_box_txt > p > span {
   font-size: 14px;
@@ -322,6 +324,8 @@ body {
 #check_box > .check_box2 > .check_box_txt > p {
   font-size: 24px;
   font-weight: 300;
+  padding-left: 15px;
+  padding-top: 20px;  
 }
 #check_box > .check_box2 > .check_box_txt > p > span {
   font-size: 14px;
