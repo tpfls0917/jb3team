@@ -217,11 +217,11 @@ body {
 }
 #btn > .swiper-button-prev {
   left: 0;
-  top: -120px;
+  top: -130px;
 }
 .swiper-button-next {
-  right: 5px;
-  top: -120px;
+  right: 0;
+  top: -130px;
 }
 #btn > .swiper-button-prev:focus,
 #btn > .swiper-button-next:focus {
