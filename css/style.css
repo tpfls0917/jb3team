@@ -1,472 +1,265 @@
-/* sub2_1.css */
-/* 메인컬러: #00286c */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB자산운용</title>
+    <!-- 웹폰트 노토산스 -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" 
+    rel="stylesheet"
+    >
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <!-- css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- bxslider css -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper.css">
+    <!-- 개인 css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bxslider js -->
+    <script src="./js/jquery.bxslider.js"></script>
+    <!-- image loaded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- 개인 js -->
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <!-- header : 고정형메뉴바-->
+    <div class="head_wrap navbar-white bg-white fixed-top navbar-expand-lg">
+      <div id="header_wrap">
+          <div id="gnb_bg"></div>
 
+          <!-- header -->
+          <header id="main_header">
+              <h1>
+                  <a href="./index.html"><img src="./images/logo.png" alt="헤더로고"></a>
+              </h1>        
+          <nav id="gnb">
+              <ul class="depth1">
+                  <li><a href="#">회사소개</a>
+                      <ul class="depth2">
+                          <li><a href="#">회사소개</a></li>
+                          <li><a href="#">채용안내</a></li>
+                          <li><a href="#">오시는 길</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">상품소개</a>
+                      <ul class="depth2">
+                          <li><a href="#">펀드상품</a></li>
+                          <li><a href="#">펀드가입안내</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">투자정보</a>
+                      <ul class="depth2">
+                          <li><a href="#">투자프로세스</a></li>
+                          <li><a href="#">에너지 자원</a></li>
+                          <li><a href="#">부동산 펀드</a></li>
+                          <li><a href="#">Private Equity</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">운용정보</a>
+                      <ul class="depth2">
+                          <li><a href="#">운용철학</a></li>
+                          <li><a href="#">사업정보</a></li>
+                          <li><a href="#">리스크관리</a></li>
+                          <li><a href="#">컴플라이언스</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">고객센터</a>
+                      <ul class="depth2">
+                          <li><a href="#">펀드공시</a></li>
+                          <li><a href="#">회사공시</a></li>
+                          <li><a href="#">보도자료</a></li>
+                          <li><a href="#">Q&A</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
+          <ul class="language">
+              <li><a href="#" class="language-active">kr</a></li>
+              <li>&nbsp;|&nbsp;</li>
+              <li><a href="#">en</a></li>
+            </ul>
+          </header>
+      </div>
+  </div>
 
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-  }
-html {
-    scroll-behavior: smooth;
-  }
-a {
-    text-decoration: none !important;
-    color: #203053;
-  }
-ul {list-style-type: none;}
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-}
+    <!-- 메인 비주얼 bxSlider -->
+    <div class="section1">
+    <section id="visual">
+      <div class="slider">
+        <img src="./images/banner01.png" alt="banner1">
+        <img src="./images/banner01.png" alt="banner2">
+        <img src="./images/banner01.png" alt="banner3">
+      </div>
+    </section>
+    </div>
 
+        <!-- swiper js -->
+        <script src="./js/swiper.js"></script>
+   
 
-/* header */
-#main_header {
-    /* outline: 1px solid blue; */
-    width: 1200px;
-    height: 100px;
-    position: relative;
-    margin: 0 auto;
-}
-#main_header img {
-  width: 100%;
-}
-/* logo */
-#main_header > h1 > a {
-    /* outline: 1px solid red; */
-    position: absolute;
-    top: 25px;
-    left: 35px;
-}
-/* language */
-#main_header > .language {
-    /* outline: 1px solid red; */
-    position: absolute;
-    top: 40px;
-    right: 110px;
-    word-spacing: 7px;
-  }
-  #main_header > .language > li {
-    float: left;
-    text-transform: uppercase;
-  }
-  #main_header > .language > li:first-child {
-    font-weight: bold;
-  }
+<!-- 투자를 시작하시나요? -->
 
-/* gnb */
-#gnb {
-    /* outline: 1px solid red; */
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
-/* depth1 */
-#gnb > .depth1 {
-    /* outline: 1px solid red; */
-    position: absolute;
-    top: 30px;
-    left: 320px;
-    z-index: 99;
-    font-weight: 400;
-  }
+  <!-- Swiper -->
+<div class="section2">
+    <section id="inv_start">
+        <div class="inv_text">
+          <h2>투자를 시작하시나요?</h2>
+          <p>JB의 전문가들이 제안하는 펀드 상품을 만나보세요!</p>
+        </div>
+    </section>
+  <div class="swiper-all">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box02.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box03.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box04.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box02.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box03.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box04.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box02.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box03.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box04.png" alt="1"></div></a>
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+    <!-- Add Arrows -->
+  </div>
+    <div id="btn">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+</div>
+    <!-- swiper.js -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 4,
+          spaceBetween: 37,
+          slidesPerGroup: 4,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+          },
+          loopFillGroupWithBlank: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        // 호버시 멈춤기능
+        $('.swiper-slide').hover(function(){
+          swiper.autoplay.stop();
+        }, function(){
+          swiper.autoplay.start();
+        });
+      </script>
   
-  #gnb > .depth1 li {
-    /* outline: 1px solid red; */
-    float: left;
-    width: 120px;
-    text-align: center;
-    height: 75px;
-  }
+  <!-- 펀드투자 가이드북 -->
+  <div class="section3">
+    <section id="guide">
+      <h1>펀드투자 가이드북</h1>
+      <p>
+    JB가 준비한 펀드 투자 전, 투자자가 반드시 확인해야 할 모든 것!</p>
+  </section>
+  </div>
+
+  <!-- 투자 전 확인하세요! -->
+  <div class="section4">
+    <section id="check_txt">
+      <h1>투자 전 확인하세요!</h1>
+      <p>투자는 철저한 사전조사와 계획이 필요합니다.<br>
+        JB자산운용에서 알려드립니다!
+      </p>
+    </section>
+    <section id="check_box">
+      <div class="check_box1">
+        <div class="check_box_txt">
+        <p>
+          JB자산운용은 운용역량을 바탕으로<br>
+          최선을 다해 여러분의 자산을<br>
+          운용하겠습니다. <br>
+          <span>- 운용철학</span>
+        </p>
+      </div>
+      </div>
+      <div class="check_box2">
+        <div class="check_box_txt">
+        <p>
+          내 자산 투자,<br>
+          위험할 때도 괜찮을까? <br>
+          <span>- 리스크관리</span>
+        </p>
+      </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 이렇게 시작하세요! -->
+  <div class="section5">
+    <section id="start">
+      <div class="start_txt">
+        <h1>천천히, 그러나 확실하게 이기는 투자<br>
+          <span>이렇게 시작하세요!</span>          
+        </h1>
+        <p>JB자산운용은 검증된 금융이론에 근거하여<br>
+        <span>장기 적립식, 글로벌 분산, 목적기반, 저비용 등 원칙을 지키는 투자</span>로 <br>
+        고객의 재산증식에 기여하겠습니다.
+      </p>
+      
+      <p class="start_detail">
+        <a href="#">
+       자세히보기
+        </a>
+      </p>
+      <div class="start_box">
+        <p class="start_box1">펀드상담</p>
+        <p class="start_box2">02-3782-5000</p>
+        <p class="start_box3">평일 오전9시~오후5시</p>
+      </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- news -->
+  <div class="section6">
+    <section id="news">
+      <ul class="news_list">
+        <li>
+          <h2>펀드공시<a href="#"><img src="./images/plus_btn.png" alt="plus_btn"></a></h2>
+          <a href="#"><img src="./images/news01.jpg" alt="news01"></a>
+          <p>[정기공시] 투자권유준칙</p>
+        </li>
+        <li>
+          <h2>회사공지<a href="#"><img src="./images/plus_btn.png" alt="plus_btn"></a></h2>
+          <a href="#"><img src="./images/news02.jpg" alt="news02"></a>
+          <p>2020년도 산업단지환경개선펀드사업 주간사업자<br>
+          모집공고(5차)</p>
+        </li>
+        <li>
+          <h2>보도자료<a href="#"><img src="./images/plus_btn.png" alt="plus_btn"></a></h2>
+          <a href="#"><img src="./images/news03.jpg" alt="news03"></a>
+          <p>美 하와이 와이키키 퍼시픽비치호텔 465억 투자</p>
+        </li>
+      </ul>
+    </section>
+  </div>
   
-  #gnb > .depth1 li a {
-    display: block;
-  /*  outline: 1px solid red;*/
-    line-height: 42px;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
+  <!-- footer -->
   
-  #gnb > .depth1 > li > a:hover {
-    background-color: #00286c;
-    color: #fff;
-    transition-duration: 0.3s;
-  }
-  
-  /* depth2 */
-  #gnb .depth2 {
-    /* background: rgba(255, 255, 255, 0.92); */
-    /* background: #ccc; */
-    height: 215px;
-    font-size: 14px;
-    display: none;
-    margin-top: 20px;
-    line-height: 32px;
-    padding: 24px 0;
-    width: calc(100% / 5);
-    position: absolute;
-  }
-  #gnb .depth2 li {
-    /* outline: 1px solid red; */
-    height: 43px;
-  }
 
-  #gnb .depth2 a {
-    width: 100%;
-    display: block;
-  }
-  #gnb .depth2 a:hover {
-    font-weight: bold;
-  }
-  #gnb > .depth1 > li > a:hover > .depth1 li {
-    outline: 1px solid red;
-    background-color: #00286c;
-  }
-
-  #gnb .depth2 a::after {
-    /* outline: 1px solid red; */
-    content: "";
-    display: block;
-    width: 115px;
-    height: 3px;
-    background-clip: content-box;
-    transition-duration: 0.8s;
-    margin: 0 auto;
-    position: relative;
-    top: -5px;
-}
-#gnb .depth2 li:hover a::after{
-    background: #00286c;
-    background-clip: content-box;
-    margin: 0 auto;
-}
-#gnb_bg {
-    position: absolute;
-    top: 105px;
-    width: 100%; height: 0px;
-    min-width: 1200px;
-    /* height: 240px; */
-    background: rgba(255, 255, 255, 0.8);
-    z-index: 1;
-    transition: 0.3s;
-    /* outline: 1px solid red; */
-}
-#gnb_bg.show {
-    height: 240px;
-    background: rgba(255, 255, 255, 0.9);
-    /* outline: 1px solid red; */
-}
-
-
-  /* main_banner */
-#visual {
-  /* outline: 1px solid red; */
-  max-width: 1200px;
-  min-width: 1200px;
-  height: 655px;
-  margin: 0 auto;
-  overflow: hidden;
-  margin-top: 100px;
-}
-.section1 {
-  background-image: url('../images/gra.jpg');
-  /* background-color: #00286c; */
-  background-size: cover;
-}
-
-
-/* 투자를 시작하시나요? */
-.section2 {
-  width: 100%;
-  background: #F7F7F7;
-  margin: 0 auto;
-  padding-bottom: 100px;
-}
-.section2 > #inv_start {
-  text-align: center;
-  padding-bottom: 100px;
-}
-.section2 > #inv_start > .inv_text {
-  width: 1200px;
-  margin: 0 auto;
-}
-.section2 > #inv_start > .inv_text > h2 {
-  color: #00286c;
-  font-size: 40px;
-  padding-top: 100px;
-  padding-bottom: 25px;
-}
-.section2 > #inv_start > .inv_text > p {
-  font-size: 28px;
-}
-.swiper-all {
-  position: relative;
-}
-.swiper-container {
-  width: 1115px;
-  /* outline: 1px solid red; */
-}
-.swiper-slide {
-  width: 250px!important;
-  /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.16) */
-}
-#btn {
-  width: 1200px;
-  position: relative;
-  margin: 0 auto;
-  /* outline: 1px solid green; */
-}
-#btn > .swiper-button-prev {
-  left: 0;
-  top: -120px;
-}
-.swiper-button-next {
-  right: 5px;
-  top: -120px;
-}
-#btn > .swiper-button-prev:focus,
-#btn > .swiper-button-next:focus {
-  outline: none;
-}
-
-/* 펀드투자 가이드북 */
-.section3 {
-  /* margin: 0 auto; */
-  width: 100%;
-  height: 200px;
-  background-image: url('../images/guide_banner.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* text-align: center; */
-}
-.section3 > #guide {
-  /* outline: 1px solid red; */
-  padding-top: 45px;
-  font-size: 35px;
-  color: #fff;
-  text-align: center;
-  width: 1200px;
-  margin: 0 auto;
-}
-.section3 > #guide > p {
-  /* padding-top: 17px; */
-  font-size: 24px;
-}
-
-/* 투자 전 확인하세요! */
-.section4 {
-  width: 1200px;
-  height: 761px;
-  margin: 0 auto;
-  /* outline: 1px solid red; */
-}
-.section4 > #check_txt {
-  text-align: center;
-  padding-top: 100px;
-  margin-bottom: 50px;
-}
-.section4 > #check_txt > h1 {
-  color: #00286c;
-  font-size: 40px;
-  padding-bottom: 20px;
-}
-.section4 > #check_txt > p {font-size: 28px; font-weight: 300;}
-#check_box > .check_box1 {
-  width: 500px; height: 350px;
-  float: left;
-  left: 75px;
-}
-#check_box > .check_box2{
-  width: 500px; height: 350px;
-  float: right;
-  right: 75px;
-}
-#check_box > .check_box1 {
-  background-image: url('../images/check01.jpg');
-  position: relative;
-}
-#check_box > .check_box2 {
-  background-image: url('../images/check02.jpg');
-  position: relative;
-}
-/* check_box1 */
-#check_box > .check_box1 > .check_box_txt {
-  width: 440px; height: 164px;
-  background: rgba(255, 255, 255, 0.75);
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-}
-#check_box > .check_box1 > .check_box_txt > p {
-  font-size: 24px;
-  font-weight: 300;
-  padding-left: 15px;
-  padding-top: 20px;  
-}
-#check_box > .check_box1 > .check_box_txt > p > span {
-  font-size: 14px;
-  font-weight: 400;
-  color: #00286c;
-  position: absolute;
-  bottom: 10px;
-  left: 15px;
-}
-/* check_box2 */
-#check_box > .check_box2 > .check_box_txt {
-  width: 440px; height: 164px;
-  background: rgba(255, 255, 255, 0.75);
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-}
-#check_box > .check_box2 > .check_box_txt > p {
-  font-size: 24px;
-  font-weight: 300;
-  padding-left: 15px;
-  padding-top: 20px;  
-}
-#check_box > .check_box2 > .check_box_txt > p > span {
-  font-size: 14px;
-  font-weight: 400;
-  color: #00286c;
-  position: absolute;
-  bottom: 10px;
-  left: 15px;
-}
-
-
-/* 이렇게 시작하세요! */
-.section5 {
-  width: 100%;
-  height: 675px;
-  margin: 0 auto;
-  /* outline: 1px solid red; */
-  color: #fff;
-}
-.section5 > #start {
-  margin-top: 30px;
-  background-image: url('../images/start.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 645px;
-}
-/* start_txt */
-.section5 {
-  width: 100%;
-  height: 675px;
-  position: relative;
-  /* outline: 1px solid red; */
-}
-.section5 > #start {
-  position: absolute;
-  width: 100%;
-  padding-bottom: 30px;
-  height: 640px;
-}
-.section5 > #start > .start_txt {
-  text-align: center;
-  padding-top: 150px;
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-.section5 > #start > .start_txt > h1 {
-  font-size: 32px;
-  font-weight: 300;
-}
-.section5 > #start > .start_txt > h1 > span {
-  font-size: 43px;
-  font-weight: 400;
-}
-.section5 > #start > .start_txt > p {
-  margin-top: 35px;
-  font-size: 20px;
-  font-weight: 200;
-  /* outline: 1px solid red; */
-}
-.section5 > #start > .start_txt > p > span {
-  font-weight: 400;
-}
-.section5 > #start > .start_txt > .start_detail > a {
-  margin: 0 auto;
-  width: 170px;
-  height: 50px;
-  line-height: 50px;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 10px 40px 10px 40px;
-  /* outline: 1px solid red; */
-}
-.section5 > #start > .start_txt > .start_detail > a:hover {
-  color: #00286c;
-  background: #fff;
-  font-weight: bold;
-}
-
-/* start_box */
-.section5 > #start > .start_txt > .start_box {
-  position: absolute;
-  background: #111;
-  width: 240px; height: 240px;
-  right: 70px;
-  top: -30px;
-  text-align: left;
-  padding-left: 20px;
-  padding-top: 55px;
-  box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.15);
-}
-.section5 > #start > .start_txt > .start_box > .start_box1 {
-  font-size: 25px;
-  font-weight: 300;
-  margin-bottom: -10px;
-}
-.section5 > #start > .start_txt > .start_box > .start_box2 {
-  font-size: 32px;
-  font-weight: 400;
-}
-.section5 > #start > .start_txt > .start_box > .start_box3 {
-  font-size: 18;
-  font-weight: 300;
-}
-
-
-/* news */
-.section6 {
-  width: 1200px; height: 500px;
-  margin: 0 auto;
-  margin-top: 90px;
-  margin-bottom: 90px;
-}
-.section6 > #news > .news_list li {
-  float: left;
-  margin-right: 65px;
-}
-.section6 > #news > .news_list li:last-child {
-  margin: 0;
-}
-.section6 > #news > .news_list li > h2 {
-  position: relative;
-  color: #00286c;
-  font-weight: 700;
-}
-.section6 > #news > .news_list li > h2 img {
-  position: absolute;
-  right: 10px;
-  width: 15px; height: 15px;
-  bottom: 10px;
-  /* outline: 1px solid red; */
-}
-.section6 > #news > .news_list li img {
-  
-}
-.section6 > #news > .news_list li > p {
-  margin-top: 20px;
-}
-
-
-/* footer */
-
-
-
-
-
-
+</body>
+</html>
