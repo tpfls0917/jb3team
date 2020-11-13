@@ -310,6 +310,9 @@ width: 100%;
   font-size: 14px;
   font-weight: 400;
   color: #00286c;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
 }
 /* check_box2 */
 #check_box > .check_box2 > .check_box_txt {
@@ -327,4 +330,7 @@ width: 100%;
   font-size: 14px;
   font-weight: 400;
   color: #00286c;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
 }
