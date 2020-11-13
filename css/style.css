@@ -115,7 +115,7 @@ body {
   overflow: hidden;
 }
 .section1 {
-/*   background-image: url('/images/gra.jpg'); */
+  background-image: url('../images/gra.jpg');
   background-color: #00286c;
   background-size: cover;
 }
