@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB자산운용</title>
+    <!-- 웹폰트 노토산스 -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" 
+    rel="stylesheet"
+    >
+    <!-- bxslider css -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper.css">
+    <!-- 개인 css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bxslider js -->
+    <script src="./js/jquery.bxslider.js"></script>
+    <!-- image loaded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+ 
+    <!-- 개인 js -->
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header id="main_header">
+        <h1>
+            <a href="#"><img src="./images/logo.png" alt="헤더로고"></a>
+        </h1>        
+
+    <nav id="gnb">
+        <ul class="depth1">
+            <li><a href="#">회사소개</a>
+                <ul class="depth2">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">채용안내</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">상품소개</a>
+                <ul class="depth2">
+                    <li><a href="#">펀드상품</a></li>
+                    <li><a href="#">펀드가입안내</a></li>
+                </ul>
+            </li>
+            <li><a href="#">투자정보</a>
+                <ul class="depth2">
+                    <li><a href="#">투자프로세스</a></li>
+                    <li><a href="#">에너지 자원</a></li>
+                    <li><a href="#">부동산 펀드</a></li>
+                    <li><a href="#">Private Equity</a></li>
+                </ul>
+            </li>
+            <li><a href="#">운용정보</a>
+                <ul class="depth2">
+                    <li><a href="#">운용철학</a></li>
+                    <li><a href="#">사업정보</a></li>
+                    <li><a href="#">리스크관리</a></li>
+                    <li><a href="#">컴플라이언스</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+                <ul class="depth2">
+                    <li><a href="#">펀드공시</a></li>
+                    <li><a href="#">회사공시</a></li>
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">Q&A</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <ul class="language">
+        <li><a href="#" class="language-active">kr</a></li>
+        <li>&nbsp;|&nbsp;</li>
+        <li><a href="#">en</a></li>
+      </ul>
+    </header>
+
+    <!-- 메인 비주얼 bxSlider -->
+    <div class="section1">
+    <section id="visual">
+      <div class="slider">
+        <img src="./images/banner01.png" alt="banner1">
+        <img src="./images/banner01.png" alt="banner2">
+        <img src="./images/banner01.png" alt="banner3">
+      </div>
+    </section>
+    </div>
+
+        <!-- swiper js -->
+        <script src="./js/swiper.js"></script>
+   
+
+<!-- 투자를 시작하시나요? -->
+
+  <!-- Swiper -->
+<div class="section2">
+    <section id="inv_start">
+        <div class="inv_text">
+          <h2>투자를 시작하시나요?</h2>
+          <p>JB의 전문가들이 제안하는 펀드 상품을 만나보세요!</p>
+        </div>
+    </section>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+      <div class="swiper-slide"><a href="#"><img src="./images/inv_box01.png" alt="1"></div></a>
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+    <!-- Add Arrows -->
+  </div>
+    <div id="btn">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+    <!-- swiper.js -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 4,
+          spaceBetween: 38,
+          slidesPerGroup: 4,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+          },
+          loopFillGroupWithBlank: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+
+</body>
+</html>

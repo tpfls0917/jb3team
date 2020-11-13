@@ -1,0 +1,167 @@
+/* style.css */
+/* 메인컬러: #00286c */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+a {
+    text-decoration: none;
+    color: #203053;
+  }
+li {list-style-type: none;}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* header */
+#main_header {
+    /* outline: 1px solid blue; */
+    width: 1200px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+#main_header img {
+  width: 100%;
+}
+
+/* logo */
+#main_header > h1 > a {
+    /* outline: 1px solid red; */
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+
+/* language */
+#main_header > .language {
+    /* outline: 1px solid red; */
+    position: absolute;
+    top: 40px;
+    right: 110px;
+  }
+  #main_header > .language > li {
+    float: left;
+    text-transform: uppercase;
+  }
+  #main_header > .language > li:first-child {
+    font-weight: bold;
+  }
+
+/* gnb */
+#gnb {
+    /* outline: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/* depth1 */
+#gnb > .depth1 {
+    /* outline: 1px solid red; */
+    position: absolute;
+    top: 30px;
+    left: 320px;
+    z-index: 99;
+  }
+  
+  #gnb > .depth1 li {
+    /* outline: 1px solid red; */
+    float: left;
+    width: 120px;
+    text-align: center;
+  }
+  
+  #gnb > .depth1 li a {
+    display: block;
+  /*  outline: 1px solid red;*/
+    line-height: 42px;
+    text-transform: uppercase;
+  }
+  
+  #gnb > .depth1 > li > a:hover {
+    background-color: #00286c;
+    color: #fff;
+    transition-duration: 0.3s;
+  }
+  
+  /* depth2 */
+  #gnb .depth2 {
+    background: rgba(255, 255, 255, 0.92);
+    /* background: #ccc; */
+    height: 250px;
+    font-size: 14px;
+    display: none;
+  }
+  #gnb .depth2 a:hover {
+    font-weight: bold;
+  }
+  #gnb > .depth1 > li > a:hover > .depth1 li {
+    outline: 1px solid red;
+    background-color: #00286c;
+    color: #fff;
+  }
+
+
+  /* main_banner */
+#visual {
+  /* outline: 1px solid red; */
+  max-width: 1200px;
+  height: 655px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section1 {
+  background-image: url('/images/gra.jpg');
+  background-size: cover;
+}
+
+
+/* 투자를 시작하시나요? */
+.section2 {
+  background: #F7F7F7;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.section2 > #inv_start {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.section2 > #inv_start > .inv_text > h2 {
+  color: #00286c;
+  font-size: 40px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+.section2 > #inv_start > .inv_text > p {
+  font-size: 28px;
+}
+.swiper-container {
+  width: 1115px;
+  /* outline: 1px solid red; */
+}
+.swiper-slide {
+  width: 250px!important;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.16)
+}
+#btn {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  /* outline: 1px solid green; */
+}
+#btn > .swiper-button-prev {
+  left: 0;
+  top: -120px;
+}
+.swiper-button-next {
+  right: 0;
+  top: -120px;
+}
+#btn > .swiper-button-prev:focus,
+#btn > .swiper-button-next:focus {
+  outline: none;
+}
