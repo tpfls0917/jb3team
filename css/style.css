@@ -269,9 +269,6 @@ body {
   font-size: 40px;
   padding-bottom: 20px;
 }
-#check_box {
-  
-}
 .section4 > #check_txt > p {font-size: 28px; font-weight: 300;}
 #check_box > .check_box1 {
   width: 500px; height: 350px;
@@ -335,3 +332,102 @@ body {
   bottom: 10px;
   left: 15px;
 }
+
+
+/* 이렇게 시작하세요! */
+.section5 {
+  width: 100%;
+  height: 675px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+  color: #fff;
+}
+.section5 > #start {
+  margin-top: 30px;
+  background-image: url('../images/start.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 645px;
+}
+/* start_txt */
+.section5 {
+  width: 100%;
+  height: 675px;
+  position: relative;
+  /* outline: 1px solid red; */
+}
+.section5 > #start {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 30px;
+  height: 640px;
+}
+.section5 > #start > .start_txt {
+  text-align: center;
+  padding-top: 150px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.section5 > #start > .start_txt > h1 {
+  font-size: 32px;
+  font-weight: 300;
+}
+.section5 > #start > .start_txt > h1 > span {
+  font-size: 43px;
+  font-weight: 400;
+}
+.section5 > #start > .start_txt > p {
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 200;
+  /* outline: 1px solid red; */
+}
+.section5 > #start > .start_txt > p > span {
+  font-weight: 400;
+}
+.section5 > #start > .start_txt > .start_detail > a {
+  margin: 0 auto;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 40px 10px 40px;
+  /* outline: 1px solid red; */
+}
+.section5 > #start > .start_txt > .start_detail > a:hover {
+  color: #00286c;
+  background: #fff;
+  font-weight: bold;
+}
+
+/* start_box */
+.section5 > #start > .start_txt > .start_box {
+  position: absolute;
+  background: #111;
+  width: 240px; height: 240px;
+  right: 70px;
+  top: -30px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 55px;
+  box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.15);
+}
+.section5 > #start > .start_txt > .start_box > .start_box1 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: -10px;
+}
+.section5 > #start > .start_txt > .start_box > .start_box2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.section5 > #start > .start_txt > .start_box > .start_box3 {
+  font-size: 18;
+  font-weight: 300;
+}
+
+
+/* news */
+
