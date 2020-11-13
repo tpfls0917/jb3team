@@ -116,7 +116,7 @@ body {
 }
 .section1 {
   background-image: url('../images/gra.jpg');
-  background-color: #00286c;
+/*   background-color: #00286c; */
   background-size: cover;
 }
 
