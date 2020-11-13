@@ -96,7 +96,7 @@ ul.bxslider {
   left: 0;
   
   /* background: url('/image/controls.png')no-repeat 0 -32px; */
-  background: url('/jbteam/images/ar3.png')no-repeat;
+  background: url('../images/ar3.png')no-repeat;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
@@ -105,7 +105,7 @@ ul.bxslider {
 .bx-wrapper .bx-next {
   right: 0;
   /* background: url('/image/controls.png') no-repeat -43px -32px; */
-  background: url('/images/ar4.png');
+  background: url('../images/ar4.png');
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
