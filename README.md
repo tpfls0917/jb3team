@@ -1,1 +1,1 @@
-# jb3team
+# https://jb3team.github.io/jb3team/.
