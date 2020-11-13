@@ -173,6 +173,7 @@ width: 100%;
   background-size: cover;
 }
 
+
 /* 투자를 시작하시나요? */
 .section2 {
   width: 100%;
@@ -261,6 +262,7 @@ width: 100%;
 .section4 > #check_txt {
   text-align: center;
   padding-top: 100px;
+  margin-bottom: 50px;
 }
 .section4 > #check_txt > h1 {
   color: #00286c;
@@ -283,12 +285,43 @@ width: 100%;
 }
 #check_box > .check_box1 {
   background-image: url('../images/check01.jpg');
+  position: relative;
 }
 #check_box > .check_box2 {
   background-image: url('../images/check02.jpg');
+  position: relative;
 }
+/* check_box1 */
 #check_box > .check_box1 > .check_box_txt {
   width: 440px; height: 164px;
   background: rgba(255, 255, 255, 0.75);
-  outline: 1px solid red;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+#check_box > .check_box1 > .check_box_txt > p {
+  font-size: 24px;
+  font-weight: 300;
+}
+#check_box > .check_box1 > .check_box_txt > p > span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #00286c;
+}
+/* check_box2 */
+#check_box > .check_box2 > .check_box_txt {
+  width: 440px; height: 164px;
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+#check_box > .check_box2 > .check_box_txt > p {
+  font-size: 24px;
+  font-weight: 300;
+}
+#check_box > .check_box2 > .check_box_txt > p > span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #00286c;
 }
