@@ -24,6 +24,7 @@ $(document).ready(function(){
       pause: 5000,
       // 자동재생: true | false
       auto: true,
+      autoHover: true,
       
       tickerHover: 'false'
 
