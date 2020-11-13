@@ -386,6 +386,7 @@ body {
 .section5 > #start > .start_txt > p > span {
   font-weight: 400;
 }
+/* 자세히보기 */
 .section5 > #start > .start_txt > .start_detail > a {
   margin: 0 auto;
   width: 170px;
@@ -464,9 +465,65 @@ body {
 
 
 /* footer */
+#main_footer {
+  width: 100%;
+  margin: 0 auto;
+}
+.line {
+  border: 1px solid #00286c;
+}
+#main_footer > .footer_menu {
+  width: 1200px;
+  margin: 0 auto;
+}
+#main_footer > .footer_menu > a {
+  margin-right: 10px;
+}
+#main_footer > .footer_menu > a > span {
+  color: #00286c;
+  font-weight: 700;
+}
+/* 로고 */
+#main_footer > .footer_menu > .footer_logo > a img{
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-right: 50px;
+  float: left;
+  /* outline: 1px solid blue; */
+}
+/* footer_menu2 */
+#main_footer > .footer_menu > .footer_menu2 {
+  float: left;
+  /* height: 150px; */
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+#main_footer > .footer_menu > .footer_menu2 p:first-child {
+  margin-top: 16px;
+}
+#main_footer > .footer_menu > .footer_menu2 p {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+#main_footer > .footer_menu > .footer_menu2 p a {
+  color: #6a6a6a;
+}
 
-
-
-
-
-
+#main_footer > .footer_menu > .footer_menu2 > .copy {
+  font-weight: 300;
+  color: #6a6a6a;
+  padding-top: 10px;
+}
+/* footer_menu3 */
+#main_footer > .footer_menu > .footer_menu3 {
+  float: left;
+  height: 150px;
+  padding-left: 15px;
+  padding-top: 43px;
+}
+#main_footer > .footer_menu > .footer_menu3 > p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
