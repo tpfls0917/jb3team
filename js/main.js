@@ -1,4 +1,3 @@
-// main.js
 
   // gnb
 $(function(){
@@ -14,6 +13,15 @@ $(function(){
   )
 });
 
+// lnb
+$(function(){
+  var menu = 0;
+
+  $('#lnb > .lnb > li > a').click(function(){
+      $('#lnb > .lnb > li > a').removeClass();
+      $(this).eq(menu).addClass('active');
+  });
+})
 
   // bxslider 
 $(document).ready(function(){
@@ -27,6 +35,7 @@ $(document).ready(function(){
       pause: 5000,
       // 자동재생: true | false
       auto: true,
+      autoHover: true,
       
       tickerHover: 'false'
 
@@ -35,3 +44,5 @@ $(document).ready(function(){
   });
 
 });
+
+
