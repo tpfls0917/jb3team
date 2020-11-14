@@ -245,6 +245,7 @@ body {
   position: relative;
   padding-top: 10px;
   padding-left: 1000px;
+  overflow: hidden;
 }
 .breadcrumb > a {
   /* outline: 1px solid red; */
