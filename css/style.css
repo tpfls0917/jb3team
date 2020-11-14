@@ -1,4 +1,4 @@
-/* sub2_1.css */
+/* style.css */
 /* 메인컬러: #00286c */
 
 
@@ -529,4 +529,29 @@ width: 100%;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 0.5rem;
+}
+
+
+
+/* 맨위로 */
+.pagetop_fixed{
+  /* outline: 1px solid red; */
+  position:fixed;
+  right: 100px; 
+  top:auto;
+  bottom:418px;
+  background-color: #00286C;
+  bottom:150px;
+  z-index: 999;
+}
+.pagetop_fixed a{
+  color: white;
+  display: block;
+  padding: 25px 18px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.pagetop_fixed a:hover {
+  font-weight: 400;
+  text-shadow: black;
 }
