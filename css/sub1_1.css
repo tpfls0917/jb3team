@@ -1,456 +1,132 @@
-/* 메인컬러: #00286c */
-
-
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-  }
-html {
-    scroll-behavior: smooth;
-  }
-a {
-    text-decoration: none !important;
-    color: #203053;
-  }
-ul {list-style-type: none;}
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-
-/* header */
-#header_wrap {
-  /* outline: 1px solid red; */
-  position: relative;
-  width: 100%; height: 100px;
-}
-#main_header {
-    /* outline: 1px solid blue; */
-    position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    height: 100px;
-}
-#main_header img {
-  width: 100%;
-}
-/* logo */
-#main_header > h1 > a {
-    /* outline: 1px solid red; */
-    position: absolute;
-    top: 25px;
-    /* left: 35px; */
-}
-/* language */
-#main_header > .language {
-    /* outline: 1px solid red; */
-    position: absolute;
-    top: 40px;
-    right: 0px;
-    word-spacing: 7px;
-  }
-  #main_header > .language > li {
-    float: left;
-    text-transform: uppercase;
-  }
-  #main_header > .language > li:first-child {
-    font-weight: bold;
-  }
-
-/* gnb */
-#gnb {
-    /* outline: 1px solid red; */
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
-/* depth1 */
-#gnb > .depth1 {
-    /* outline: 1px solid red; */
-    position: absolute;
-    top: 30px;
-    left: 350px;
-    z-index: 99;
-    font-weight: 400;
-  }
-  
-  #gnb > .depth1 li {
-    /* outline: 1px solid red; */
-    float: left;
-    width: 140px;
-    text-align: center;
-    height: 75px;
-  }
-  
-  #gnb > .depth1 li a {
-    display: block;
-  /*  outline: 1px solid red;*/
-    line-height: 42px;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-  
-  #gnb > .depth1 > li > a:hover {
-    background-color: #00286c;
-    color: #fff;
-    transition-duration: 0.3s;
-  }
-  
-  /* depth2 */
-  #gnb .depth2 {
-    /* background: rgba(255, 255, 255, 0.92); */
-    /* background: #ccc; */
-    height: 215px;
-    font-size: 14px;
-    display: none;
-    margin-top: 20px;
-    line-height: 32px;
-    padding: 24px 0;
-    width: calc(100% / 5);
-    position: absolute;
-    
-  }
-  #gnb .depth2 li {
-    /* outline: 1px solid red; */
-    height: 43px;
-  }
-
-  #gnb .depth2 a {
-    width: 100%;
-    display: block;
-  }
-  #gnb .depth2 a:hover {
-    font-weight: bold;
-  }
-  #gnb > .depth1 > li > a:hover > .depth1 li {
-    outline: 1px solid red;
-    background-color: #00286c;
-  }
-
-  #gnb .depth2 a::after {
-    /* outline: 1px solid red; */
-    content: "";
-    display: block;
-    width: 115px;
-    height: 3px;
-    background-clip: content-box;
-    transition-duration: 0.8s;
-    margin: 0 auto;
-    position: relative;
-    top: -5px;
-}
-#gnb .depth2 li:hover a::after{
-    background: #00286c;
-    background-clip: content-box;
-    margin: 0 auto;
-}
-#gnb_bg {
-    position: absolute;
-    top: 100px;
-    width: 100%; height: 0px;
-    min-width: 1200px;
-    /* height: 240px; */
-    background: rgba(255, 255, 255, 0.8);
-    z-index: 1;
-    transition: 0.3s;
-    /* outline: 1px solid red; */
-}
-#gnb_bg.show {
-    height: 240px;
-    background: rgba(255, 255, 255, 0.9);
-    /* outline: 1px solid red; */
-}
-
-
+/* sub1_1.css */
 
 /* sub main_banner */
-
-#banner {
-  /* outline: 1px solid red; */
-  width: 100%;
-  height: 330px;
-  margin: 0 auto;
-  position: relative;
-  top: 110px;
-}
-#banner .banner_img{
-  height: 330px;
+#banner .banner_img {
   background-image: url(../images/sub1_1_main.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #banner .banner_text {
-  width: 1200px; 
-  margin: 0 auto;
-  position: relative;
+  color: #00286c;
 }
 .banner_text > h1 {
-  font-size: 35px;
-  position: absolute;
-  bottom: 145px; left: 163px;
-}
-.banner_text > h1 span {
   font-weight: 600;
+  left: 163px;
 }
 .banner_text > p {
-  font-size: 15px;
   position: absolute;
-  bottom: 190px; left: 140px;
+  bottom: 190px;
+  left: 140px;
 }
-
-
 
 /* lnb */
-#lnb {
-  position: relative;
-  top: 110px;
-  width: 1200px;
-  height: 50px;
-  margin: 0 auto;
-}
-#lnb .lnb {
-  position: absolute;
-}
 #lnb .lnb > li {
-  float: left;
-  color: #000;
   width: calc(1200px / 3);
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 50px;
-  border-bottom: 2px solid #00286c;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
-#lnb > .lnb > li > a {
-  display: block;
-  color: #000;
-  font-size: 15px;
-  font-weight: 500;
-}
-#lnb > .lnb > li > a.active {
-  color: #fff;
-  background: #00286c;
-}
-
-
-
-/* breadcrumb */
-.breadcrumb {
-  /* outline: 1px solid red; */
-  width: 1200px;
-  margin: 0 auto;
-  top: 115px;
-  background: #fff;
-  position: relative;
-  padding-top: 10px;
-  padding-left: 1000px;
-}
-.breadcrumb > a {
-  /* outline: 1px solid red; */
-  font-size: 12px;
-}
-
-
 
 /* main  */
 
-
-
 /* graph */
 #graph {
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
-    margin-top: 215px;
-    text-align: center;
-    background: #ECECEC;
+  max-width: 1920px;
+  min-width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 215px;
+  text-align: center;
+  background: #ececec;
 }
 #graph > #graph_text {
-    padding-top: 110px;
-    padding-bottom: 50px;
+  padding-top: 110px;
+  padding-bottom: 50px;
 }
 #graph > #graph_text > h2 {
-    color: #5F5AFF;
-    font-size: 22px;
+  color: #5f5aff;
+  font-size: 22px;
 }
 #graph > #graph_text > p {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 }
 #graph > #graph_img {
-    width: 961px;
-    height: 338px;
-    background-image: url('../images/graph.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
+  width: 961px;
+  height: 338px;
+  background-image: url(../images/graph.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
-
 
 /* graphic */
 #graphic {
-    width: 1200px;
-    height: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    /* outline: 1px solid red; */
-    /* background: #ccc; */
+  width: 1200px;
+  height: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  /* outline: 1px solid red; */
+  /* background: #ccc; */
 }
 #graphic > #graphic_text {
-    padding-top: 100px;
-    padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 #graphic > #graphic_text > h2 {
-    color: #5F5AFF;
-    font-size: 22px;
+  color: #5f5aff;
+  font-size: 22px;
 }
 #graphic > #graphic_text > p {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 }
 #graphic > #graphic_img {
-    width: 448px;
-    height: 306px;
-    background-image: url('../images/graphic.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    /* outline: 1px solid red; */
+  width: 448px;
+  height: 306px;
+  background-image: url(../images/graphic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
 }
 /* 텍스트박스 */
 #graphic_box_container {
-    position: relative;
+  position: relative;
 }
 #graphic_box_container > .graphic_box {
-    position: absolute;
-    width: 267px;
-    height: 319px;
-    background: #2A62BF;
+  position: absolute;
+  width: 267px;
+  height: 319px;
+  background: #2a62bf;
 }
 #graphic_box_container > .graphic_box:first-child {
-    left: 107px;
-    top: -50px;
+  left: 107px;
+  top: -50px;
 }
 #graphic_box_container > .graphic_box:nth-child(2) {
-    background: #00286C;
-    left: 465px;
-    top: 63px;
+  background: #00286c;
+  left: 465px;
+  top: 63px;
 }
 #graphic_box_container > .graphic_box:last-child {
-    left: 824px;
-    top: -50px;
+  left: 824px;
+  top: -50px;
 }
 #graphic_box_container > .graphic_box > h2 {
-    font-size: 28px;
-    color: #ccc;
-    padding: 30px 0 30px 0;
+  font-size: 28px;
+  color: #ccc;
+  padding: 30px 0 30px 0;
 }
 #graphic_box_container > .graphic_box > h3 {
-    font-size: 15px;
-    color: #fff;
-    padding-bottom: 5px;
+  font-size: 15px;
+  color: #fff;
+  padding-bottom: 5px;
 }
 #graphic_box_container > .graphic_box > p {
-    font-size: 15px;
-    color: #ddd;
-    padding-top: 10px;
+  font-size: 15px;
+  color: #ddd;
+  padding-top: 10px;
 }
 #graphic_box_container > .graphic_box > hr {
-    border-bottom: 1px solid #fff;
-    width: 35px;
-    margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  width: 35px;
+  margin: 0 auto;
 }
-
-
-
-
-/* footer */
-#main_footer {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .line {
-    border: 1px solid #00286c;
-  }
-  #main_footer > .footer_menu {
-    width: 1200px;
-    margin: 0 auto;
-  }
-  #main_footer > .footer_menu > a {
-    margin-right: 10px;
-  }
-  #main_footer > .footer_menu > a > span {
-    color: #00286c;
-    font-weight: 700;
-  }
-  /* 로고 */
-  #main_footer > .footer_menu > .footer_logo > a img{
-    padding-top: 63px;
-    padding-bottom: 63px;
-    padding-right: 50px;
-    float: left;
-    /* outline: 1px solid blue; */
-  }
-  /* footer_menu2 */
-  #main_footer > .footer_menu > .footer_menu2 {
-    float: left;
-    /* height: 150px; */
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-  }
-  #main_footer > .footer_menu > .footer_menu2 p:first-child {
-    margin-top: 16px;
-  }
-  #main_footer > .footer_menu > .footer_menu2 p {
-    font-size: 14px;
-    margin-bottom: 0.5rem;
-  }
-  #main_footer > .footer_menu > .footer_menu2 p a {
-    color: #6a6a6a;
-  }
-  
-  #main_footer > .footer_menu > .footer_menu2 > .copy {
-    font-weight: 300;
-    color: #6a6a6a;
-    padding-top: 10px;
-  }
-  /* footer_menu3 */
-  #main_footer > .footer_menu > .footer_menu3 {
-    float: left;
-    height: 150px;
-    padding-left: 15px;
-    padding-top: 43px;
-  }
-  #main_footer > .footer_menu > .footer_menu3 > p {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-  }
-  
-  
-  
-  /* 맨위로 */
-  .pagetop_fixed{
-    /* outline: 1px solid red; */
-    position:fixed;
-    right: 100px; 
-    top:auto;
-    bottom:418px;
-    background-color: #00286C;
-    bottom:150px;
-    z-index: 999;
-  }
-  .pagetop_fixed a{
-    color: white;
-    display: block;
-    padding: 25px 18px;
-    font-size: 18px;
-    font-weight: 300;
-  }
-  .pagetop_fixed a:hover {
-    font-weight: 400;
-    text-shadow: black;
-  }
-  

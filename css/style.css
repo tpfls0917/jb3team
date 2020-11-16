@@ -1,9 +1,9 @@
 /* style.css */
 /* 메인컬러: #00286c */
 
-
-*{
-  margin: 0; padding: 0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 html {
@@ -13,17 +13,103 @@ a {
   text-decoration: none !important;
   color: #203053;
 }
-ul {list-style-type: none;}
+ul {
+  list-style-type: none;
+}
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* sub 공통영역 */
+/* sub main_banner */
+
+#banner {
+  /* outline: 1px solid red; */
+  max-width: 1920px;
+  min-width: 1200px;
+  height: 330px;
+  margin: 0 auto;
+  position: relative;
+  top: 110px;
+}
+#banner .banner_img {
+  height: 330px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#banner .banner_text {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.banner_text > h1 {
+  font-size: 35px;
+  position: absolute;
+  bottom: 145px;
+}
+.banner_text > p {
+  font-size: 15px;
+}
+
+/* lnb */
+#lnb {
+  position: relative;
+  top: 110px;
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+}
+#lnb::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#lnb .lnb {
+  position: absolute;
+}
+#lnb .lnb > li {
+  float: left;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+}
+#lnb > .lnb > li > a {
+  display: block;
+  color: #00286c;
+  font-size: 15px;
+  font-weight: 500;
+}
+#lnb > .lnb > li > a.active {
+  color: #fff;
+  background: #00286c;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  /* outline: 1px solid red; */
+  width: 1200px;
+  margin: 0 auto;
+  top: 115px;
+  background: #fff;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 1000px;
+}
+.breadcrumb > a {
+  /* outline: 1px solid red; */
+  font-size: 12px;
 }
 
 
 /* header */
 #header_wrap {
-/* outline: 1px solid red; */
-position: relative;
-width: 100%; height: 100px;
+  /* outline: 1px solid red; */
+  position: relative;
+  /* max-width: 1920px;
+min-width: 1200px;  */
+  /* height: 100px; */
 }
 #main_header {
   /* outline: 1px solid blue; */
@@ -33,7 +119,7 @@ width: 100%; height: 100px;
   height: 100px;
 }
 #main_header img {
-width: 100%;
+  width: 100%;
 }
 /* logo */
 #main_header > h1 > a {
@@ -85,7 +171,7 @@ width: 100%;
 
 #gnb > .depth1 li a {
   display: block;
-/*  outline: 1px solid red;*/
+  /*  outline: 1px solid red;*/
   line-height: 42px;
   text-transform: uppercase;
   font-weight: 500;
@@ -109,7 +195,6 @@ width: 100%;
   padding: 24px 0;
   width: calc(100% / 5);
   position: absolute;
-  
 }
 #gnb .depth2 li {
   /* outline: 1px solid red; */
@@ -140,7 +225,7 @@ width: 100%;
   position: relative;
   top: -5px;
 }
-#gnb .depth2 li:hover a::after{
+#gnb .depth2 li:hover a::after {
   background: #00286c;
   background-clip: content-box;
   margin: 0 auto;
@@ -148,7 +233,8 @@ width: 100%;
 #gnb_bg {
   position: absolute;
   top: 100px;
-  width: 100%; height: 0px;
+  width: 100%;
+  height: 0px;
   min-width: 1200px;
   /* height: 240px; */
   background: rgba(255, 255, 255, 0.8);
@@ -162,28 +248,29 @@ width: 100%;
   /* outline: 1px solid red; */
 }
 
-
-  /* main_banner */
+/* main_banner */
 #visual {
   /* outline: 1px solid red; */
-  max-width: 1200px;
-  min-width: 1200px;
+  width: 1200px;
   height: 655px;
   margin: 0 auto;
   overflow: hidden;
   margin-top: 100px;
 }
 .section1 {
-  background-image: url('../images/gra.jpg');
+  background-image: url(../images/gra.jpg);
   /* background-color: #00286c; */
   background-size: cover;
+  background-position: center;
+  max-width: 1920px;
+  min-width: 1200px;
 }
-
 
 /* 투자를 시작하시나요? */
 .section2 {
-  width: 100%;
-  background: #F7F7F7;
+  max-width: 1920px;
+  min-width: 1200px;
+  background: #f7f7f7;
   margin: 0 auto;
   padding-bottom: 100px;
 }
@@ -212,7 +299,7 @@ width: 100%;
   /* outline: 1px solid red; */
 }
 .swiper-slide {
-  width: 250px!important;
+  width: 250px !important;
   /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.16) */
 }
 #btn {
@@ -237,12 +324,13 @@ width: 100%;
 /* 펀드투자 가이드북 */
 .section3 {
   /* margin: 0 auto; */
-  width: 100%;
+  max-width: 1920px;
+  min-width: 1200px;
   height: 200px;
-  background-image: url('../images/guide_banner.jpg');
+  background-image: url(../images/guide_banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* text-align: center; */
+  background-position: center;
 }
 .section3 > #guide {
   /* outline: 1px solid red; */
@@ -275,40 +363,46 @@ width: 100%;
   font-size: 40px;
   padding-bottom: 20px;
 }
-.section4 > #check_txt > p {font-size: 28px; font-weight: 300;}
-#check_box > .check_box1 {
-  width: 500px; height: 350px;
+.section4 > #check_txt > p {
+  font-size: 28px;
+  font-weight: 300;
+}
+#check_box > a > .check_box1 {
+  width: 500px;
+  height: 350px;
   float: left;
   left: 75px;
 }
-#check_box > .check_box2{
-  width: 500px; height: 350px;
+#check_box > a > .check_box2 {
+  width: 500px;
+  height: 350px;
   float: right;
   right: 75px;
 }
-#check_box > .check_box1 {
-  background-image: url('../images/check01.jpg');
+#check_box > a > .check_box1 {
+  background-image: url(../images/check01.jpg);
   position: relative;
 }
-#check_box > .check_box2 {
-  background-image: url('../images/check02.jpg');
+#check_box > a > .check_box2 {
+  background-image: url(../images/check02.jpg);
   position: relative;
 }
 /* check_box1 */
-#check_box > .check_box1 > .check_box_txt {
-  width: 440px; height: 164px;
+#check_box > a > .check_box1 > .check_box_txt {
+  width: 440px;
+  height: 164px;
   background: rgba(255, 255, 255, 0.75);
   position: absolute;
   bottom: 30px;
   left: 30px;
 }
-#check_box > .check_box1 > .check_box_txt > p {
+#check_box > a > .check_box1 > .check_box_txt > p {
   font-size: 24px;
   font-weight: 300;
   padding-left: 15px;
-  padding-top: 20px;  
+  padding-top: 20px;
 }
-#check_box > .check_box1 > .check_box_txt > p > span {
+#check_box > a > .check_box1 > .check_box_txt > p > span {
   font-size: 14px;
   font-weight: 400;
   color: #00286c;
@@ -317,20 +411,21 @@ width: 100%;
   left: 15px;
 }
 /* check_box2 */
-#check_box > .check_box2 > .check_box_txt {
-  width: 440px; height: 164px;
+#check_box > a > .check_box2 > .check_box_txt {
+  width: 440px;
+  height: 164px;
   background: rgba(255, 255, 255, 0.75);
   position: absolute;
   bottom: 30px;
   left: 30px;
 }
-#check_box > .check_box2 > .check_box_txt > p {
+#check_box > a > .check_box2 > .check_box_txt > p {
   font-size: 24px;
   font-weight: 300;
   padding-left: 15px;
-  padding-top: 20px;  
+  padding-top: 20px;
 }
-#check_box > .check_box2 > .check_box_txt > p > span {
+#check_box > a > .check_box2 > .check_box_txt > p > span {
   font-size: 14px;
   font-weight: 400;
   color: #00286c;
@@ -339,29 +434,25 @@ width: 100%;
   left: 15px;
 }
 
-
 /* 이렇게 시작하세요! */
 .section5 {
-  width: 100%;
+  max-width: 1920px;
+  min-width: 1200px;
   height: 675px;
   margin: 0 auto;
   /* outline: 1px solid red; */
   color: #fff;
+  position: relative;
 }
 .section5 > #start {
   margin-top: 30px;
-  background-image: url('../images/start.png');
+  background-image: url(../images/start.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 645px;
 }
 /* start_txt */
-.section5 {
-  width: 100%;
-  height: 675px;
-  position: relative;
-  /* outline: 1px solid red; */
-}
 .section5 > #start {
   position: absolute;
   width: 100%;
@@ -413,7 +504,8 @@ width: 100%;
 .section5 > #start > .start_txt > .start_box {
   position: absolute;
   background: #111;
-  width: 240px; height: 240px;
+  width: 240px;
+  height: 240px;
   right: 70px;
   top: -30px;
   text-align: left;
@@ -435,10 +527,10 @@ width: 100%;
   font-weight: 300;
 }
 
-
 /* news */
 .section6 {
-  width: 1200px; height: 500px;
+  width: 1200px;
+  height: 500px;
   margin: 0 auto;
   margin-top: 90px;
   margin-bottom: 90px;
@@ -458,7 +550,8 @@ width: 100%;
 .section6 > #news > .news_list li > h2 img {
   position: absolute;
   right: 10px;
-  width: 15px; height: 15px;
+  width: 15px;
+  height: 15px;
   bottom: 10px;
   /* outline: 1px solid red; */
 }
@@ -466,10 +559,10 @@ width: 100%;
   margin-top: 20px;
 }
 
-
 /* footer */
 #main_footer {
-  width: 100%;
+  max-width: 1920px;
+  min-width: 1200px;
   margin: 0 auto;
 }
 .line {
@@ -487,7 +580,7 @@ width: 100%;
   font-weight: 700;
 }
 /* 로고 */
-#main_footer > .footer_menu > .footer_logo > a img{
+#main_footer > .footer_menu > .footer_logo > a img {
   padding-top: 63px;
   padding-bottom: 63px;
   padding-right: 50px;
@@ -531,20 +624,18 @@ width: 100%;
   margin-bottom: 0.5rem;
 }
 
-
-
 /* 맨위로 */
-.pagetop_fixed{
+.pagetop_fixed {
   /* outline: 1px solid red; */
-  position:fixed;
-  right: 100px; 
-  top:auto;
-  bottom:418px;
-  background-color: #00286C;
-  bottom:150px;
+  position: fixed;
+  right: 100px;
+  top: auto;
+  bottom: 418px;
+  background-color: #00286c;
+  bottom: 150px;
   z-index: 999;
 }
-.pagetop_fixed a{
+.pagetop_fixed a {
   color: white;
   display: block;
   padding: 25px 18px;
